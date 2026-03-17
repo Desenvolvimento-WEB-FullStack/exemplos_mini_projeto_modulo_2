@@ -4,18 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets</title>
+
+    <style>
+      .botao {
+        font-size: 20px;
+        background-color: #36aca0;
+        border: 1px solid #36aca0;
+        border-radius: 25px;
+        min-width: 50px;
+        padding: 6px 16px;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+      }
+
+      .botao:hover {
+        background-color: #1b7f75;
+      }
+
+      .botao:active {
+        transform: scale(0.95); /* A slight shrink when pressed down */
+      }
+    </style>
   </head>
   <body>
-    <button onclick="carregarPets()">Todos</button>
-    <button onclick="carregarCachorros()">Cachorros</button>
-    <button onclick="carregarGatos()">Somente Gatos</button>
+    <button id="todos" class="botao">Todos</button>
+    <button onclick="carregarPets('?tipo=cachorro')">Cachorros</button>
+    <button onclick="carregarPets('?tipo=gato')">Somente Gatos</button>
 
-    <ul id="lista">
-      <!-- 
-        
-        -->
-    </ul>
+    <ul id="lista"></ul>
 
-    <script src="pets_com_filtros_funcoes_separada.js"></script>
+    <script src="pets_filtro_final.js"></script>
   </body>
 </html>
