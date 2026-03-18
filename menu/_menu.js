@@ -14,9 +14,9 @@ function carregarMenu() {
 function deixarMenuAtivo() {
   var url_atual = window.location.pathname;
 
-  if (url_atual === "/tela1.html") {
+  if (url_atual === "/menu/tela1.html") {
     document.getElementById("tela_1").classList.add("menu_ativo");
-  } else if (url_atual === "/tela2.html") {
+  } else if (url_atual === "/menu/tela2.html") {
     document.getElementById("tela_2").classList.add("menu_ativo");
   }
 }
