@@ -8,7 +8,7 @@ async function carregarPets(tipo) {
     var itemDaListaHTML = `<li> 
     <img src=${pet.imagem} width="30px" /> 
     Pet: ${pet.nome}
-    <a href="form.html?imagem=${pet.imagem}" target="_blank">Quero adotar</a>
+    <a href="form.html?imagem=${pet.imagem}"> Quero adotar <a/>
     </li>
     `;
 

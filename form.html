@@ -8,13 +8,16 @@
   <body>
     meu formulario
 
-    <img id="imagem_do_pet" />
+    <img width="100px" id="foto_do_pet" />
 
     <script>
-      var dadosDaUrl = new URLSearchParams(window.location.search);
-      var imagem = dadosDaUrl.get("imagem");
+      function capturaUrl() {
+        var dadosDaUrl = new URLSearchParams(window.location.search);
+        var imagemDaUrl = dadosDaUrl.get("imagem");
+        document.getElementById("foto_do_pet").setAttribute("src", imagemDaUrl);
+      }
 
-      document.getElementById("imagem_do_pet").setAttribute("src", imagem);
+      capturaUrl();
     </script>
   </body>
 </html>
