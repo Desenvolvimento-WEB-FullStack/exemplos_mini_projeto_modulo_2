@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .form {
+        max-width: 450px;
+        background-color: #bcb8b8;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 40px auto;
+        min-height: 400px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" id="cadastro_pet">
+      <input
+        type="url"
+        placeholder="Digite a url do pet"
+        required
+        id="campo_url"
+      />
+
+      <input placeholder="Digite o nome do pet" required id="campo_nome" />
+
+      <select required id="campo_tipo">
+        <option value="">Selecione o tipo do pet</option>
+        <option value="Cachorro">Cachorro</option>
+        <option value="Cachorro">Gato</option>
+      </select>
+
+      <input placeholder="Digite a raca do pet" required id="campo_raca" />
+
+      <input
+        type="number"
+        placeholder="Digite a idade do pet"
+        required
+        id="campo_idade"
+      />
+
+      <select required id="campo_sexo">
+        <option value="">Selecione o sexo do pet</option>
+        <option value="Macho">Macho</option>
+        <option value="Femea">Femea</option>
+      </select>
+
+      <select required id="campo_porte">
+        <option value="">Selecione o porte do pet</option>
+        <option value="Pequeno">Pequeno</option>
+        <option value="Medio">Medio</option>
+        <option value="Grande">Grande</option>
+      </select>
+
+      <textarea
+        placeholder="digite a descricao"
+        required
+        id="campo_descricao"
+      ></textarea>
+
+      <button type="submit">Cadastrar pet</button>
+    </form>
+
+    <script src="cadastro.js"></script>
+  </body>
+</html>
